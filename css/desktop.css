@@ -1,0 +1,32 @@
+#main-header {
+  flex-direction: row;
+}
+.header-content {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.toggle p {
+  margin-right: 10px;
+}
+
+.top-header {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+section {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 960px) {
+  section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

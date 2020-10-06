@@ -1,87 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 300px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 768px)"
+      href="css/desktop.css"
+    />
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <title>Frontend Mentor | Social Media Dashboard</title>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <!-- Top Section -->
+    <header class="main-header">
+      <!-- <div class="container"> -->
+      <div class="header-content">
+        <div class="top-header">
+          <h1>Social Media Dashboard</h1>
+          <p>Total Followers: 23,004</p>
+        </div>
+        <div class="toggle">
+          <p class="mode">Dark Mode</p>
+          <label class="switch">
+            <input type="checkbox" id="toggle" checked />
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </div>
+      <!-- </div> -->
+    </header>
 
-  Dark Mode
+    <!-- Social Stats Section -->
+    <div class="container">
+      <section id="social-stats">
+        <div class="facebook">
+          <div class="card">
+            <div class="social-platform">
+              <a href="#"
+                ><img src="images/icon-facebook.svg" alt="Facebook"
+              /></a>
+              <a href="#"><p>@nathanf</p></a>
+            </div>
+            <h2 class="stats-amount">1987</h2>
+            <span class="followers">Followers</span>
+            <span class="todays-stats positive"
+              ><img src="images/icon-up.svg" alt="Up icon" />12 Today</span
+            >
+          </div>
+        </div>
 
-  
+        <div class="twitter">
+          <div class="card">
+            <div class="social-platform">
+              <a href="#"
+                ><img src="images/icon-twitter.svg" alt="Twitter"
+              /></a>
+              <a href="#"><p>@nathanf</p></a>
+            </div>
+            <h2 class="stats-amount">1987</h2>
+            <span class="followers">Followers</span>
+            <span class="todays-stats positive"
+              ><img src="images/icon-up.svg" alt="Up icon" />99 Today</span
+            >
+          </div>
+        </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+        <div class="instagram">
+          <div class="card">
+            <div class="social-platform">
+              <a href="#"
+                ><img src="images/icon-instagram.svg" alt="Instagram"
+              /></a>
+              <a href="#"><p>@nathanf</p></a>
+            </div>
+            <h2 class="stats-amount">11k</h2>
+            <span class="followers">Followers</span>
+            <span class="todays-stats positive"
+              ><img src="images/icon-up.svg" alt="Up icon" />1099 Today</span
+            >
+          </div>
+        </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+        <div class="youtube">
+          <div class="card">
+            <div class="social-platform">
+              <a href="#"
+                ><img src="images/icon-youtube.svg" alt="YouTube"
+              /></a>
+              <a href="#"><p>@nathanf</p></a>
+            </div>
+            <h2 class="stats-amount">8239</h2>
+            <span class="followers">Followers</span>
+            <span class="todays-stats negative"
+              ><img src="images/icon-down.svg" alt="Up icon" />144 Today</span
+            >
+          </div>
+        </div>
+      </section>
+    </div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    <!-- Section Overview -->
+    <div class="container">
+      <h3 class="overview">Overview - Today</h3>
+      <section id="overview">
+        <div class="card">
+          <div class="page-views">
+            <p>Page Views</p>
+            <img src="images/icon-facebook.svg" alt="Facebook" />
+          </div>
+          <div class="social-growth">
+            <h4 class="stats-overview">87</h4>
+            <p class="positive"><img src="images/icon-up.svg" alt="" /> 3%</p>
+          </div>
+        </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        <div class="card">
+          <div class="page-views">
+            <p>Likes</p>
+            <img src="images/icon-facebook.svg" alt="facicon-facebook" />
+          </div>
+          <div class="social-growth">
+            <h4>52</h4>
+            <p class="negative"><img src="images/icon-down.svg" alt="" /> 2%</p>
+          </div>
+        </div>
 
+        <div class="card">
+          <div class="page-views">
+            <p>Likes</p>
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+          </div>
+          <div class="social-growth">
+            <h4>5462</h4>
+            <p class="positive">
+              <img src="images/icon-up.svg" alt="" /> 2257%
+            </p>
+          </div>
+        </div>
 
+        <div class="card">
+          <div class="page-views">
+            <p>Profile Views</p>
+            <img src="images/icon-instagram.svg" alt="Instagram" />
+          </div>
+          <div class="social-growth">
+            <h4>52k</h4>
+            <p class="positive">
+              <img src="images/icon-up.svg" alt="" /> 1375%
+            </p>
+          </div>
+        </div>
 
-  Overview - Today
+        <div class="card">
+          <div class="page-views">
+            <p>Retweets</p>
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+          </div>
+          <div class="social-growth">
+            <h4>117</h4>
+            <p class="positive"><img src="images/icon-up.svg" alt="" /> 303%</p>
+          </div>
+        </div>
 
-  Page Views
-  87
-  3%
+        <div class="card">
+          <div class="page-views">
+            <p>Likes</p>
+            <img src="images/icon-twitter.svg" alt="Twitter" />
+          </div>
+          <div class="social-growth">
+            <h4>507</h4>
+            <p class="positive"><img src="images/icon-up.svg" alt="" /> 553%</p>
+          </div>
+        </div>
 
-  Likes
-  52
-  2%
+        <div class="card">
+          <div class="page-views">
+            <p>Likes</p>
+            <img src="images/icon-youtube.svg" alt="YouTube" />
+          </div>
+          <div class="social-growth">
+            <h4>107</h4>
+            <p class="negative">
+              <img src="images/icon-down.svg" alt="" /> 19%
+            </p>
+          </div>
+        </div>
 
-  Likes
-  5462
-  2257%
+        <div class="card">
+          <div class="page-views">
+            <p>Total Views</p>
+            <img src="images/icon-youtube.svg" alt="YouTube" />
+          </div>
+          <div class="social-growth">
+            <h4>1407</h4>
+            <p class="negative">
+              <img src="images/icon-down.svg" alt="" /> 12%
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
 
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
